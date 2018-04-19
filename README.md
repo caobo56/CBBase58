@@ -16,7 +16,8 @@ https://github.com/oleganza/CoreBitcoin
 ```
 pod 'CBBase58'
 ```
-base58的查询字母表
+### base58的查询字母表
+
 我的CBBase58 是从CoreBitcoin摘出来的，CoreBitcoin是比特币的pod库，他的base58 最后查询的字母表与比特币的保持一致，如果有更改的需要，可以从github上下载代码并修改。
 
 修改代码的位置为：
