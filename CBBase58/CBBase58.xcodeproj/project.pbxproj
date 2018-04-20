@@ -19,6 +19,7 @@
 		A84EC0A320882FA500D6EB64 /* BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = A84EC09F20882FA500D6EB64 /* BTCData.m */; };
 		A84EC0A420882FA500D6EB64 /* BTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = A84EC0A020882FA500D6EB64 /* BTCBase58.m */; };
 		A84EC0AA20897D2500D6EB64 /* NSData+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = A84EC0A820897D2500D6EB64 /* NSData+Hashing.m */; };
+		A84EC0AC20897D9A00D6EB64 /* CBBase58.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A84EC0AB20897D9A00D6EB64 /* CBBase58.podspec */; };
 		FC1766DA460BB6E03370AC0F /* libPods-CBBase58.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F5259F242CA46FC801386E /* libPods-CBBase58.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		A84EC0A120882FA500D6EB64 /* NS+BTCBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NS+BTCBase58.h"; sourceTree = "<group>"; };
 		A84EC0A820897D2500D6EB64 /* NSData+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hashing.m"; sourceTree = "<group>"; };
 		A84EC0A920897D2500D6EB64 /* NSData+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hashing.h"; sourceTree = "<group>"; };
+		A84EC0AB20897D9A00D6EB64 /* CBBase58.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CBBase58.podspec; path = ../CBBase58.podspec; sourceTree = "<group>"; };
 		E4F5259F242CA46FC801386E /* libPods-CBBase58.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CBBase58.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 		A84EC05D20882DF700D6EB64 = {
 			isa = PBXGroup;
 			children = (
+				A84EC0AB20897D9A00D6EB64 /* CBBase58.podspec */,
 				A84EC09B20882FA500D6EB64 /* base58 */,
 				A84EC06820882DF700D6EB64 /* CBBase58 */,
 				A84EC08120882DF800D6EB64 /* CBBase58Tests */,
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84EC07620882DF800D6EB64 /* LaunchScreen.storyboard in Resources */,
+				A84EC0AC20897D9A00D6EB64 /* CBBase58.podspec in Resources */,
 				A84EC07320882DF800D6EB64 /* Assets.xcassets in Resources */,
 				A84EC07120882DF700D6EB64 /* Main.storyboard in Resources */,
 			);

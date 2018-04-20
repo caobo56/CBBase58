@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CBBase58"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "caobo's CBBase58. A base58 code. Copy from CoreBitcoin."
 
   # This description is used to generate tags and improve search results.
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "caobo" => "caobo56@sina.com" }
   # Or just: s.author    = "caobo"
-  # s.authors            = { "caobo" => "bo.cao@Superd3d.com" }
+  # s.authors            = { "caobo" => "caobo56@sina.com" }
   # s.social_media_url   = "http://twitter.com/caobo"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/caobo56/CBBase58.git", :tag => "0.9.0" }
+  s.source       = { :git => "https://github.com/caobo56/CBBase58.git", :tag => "0.9.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
