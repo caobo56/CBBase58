@@ -76,5 +76,23 @@ NSData+Hashing.h 的接口：
 
 ```
 
+# CB_RIPEMD
 
+项目地址：
+https://github.com/caobo56/CB_RIPEMD
 
+### 使用方式：
+```
+pod  'CB_RIPEMD'
+```
+目前版本为（0.9.0）
+
+CB_RIPEMD是RIPEMD算法的OC基础pod库，目前只有RIPEMD-160。
+
+也是从CoreBitcoin 项目摘出来的，目的是方便查找RIPEMD-160(RIPEMD160)。
+
+我之前的CBBase58也有这部分代码，但单独放出来方便查找。
+
+目前该 repo 只有 RIPEMD-160。
+
+计划是将 RIPEMD 下的相关算法都集成一下，包括（128、160、256和320），回头慢慢补充更新。
