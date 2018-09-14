@@ -16,6 +16,28 @@ https://github.com/oleganza/CoreBitcoin
 ```
 pod 'CBBase58'
 ```
+
+### 代码使用方法
+
+#### 1) 先导入必要的头文件
+
+```
+#import "NS+BTCBase58.h"
+```
+
+#### 2) 根据类型进行base58转换 
+
+NS+BTCBase58 支持 NSString、NSData、NSMutableData，这里仅给出NSString、NSData的。
+
+```
+    NSString * tt = @"ttttt";
+    NSLog(@"dataFromBase58 = %@\n dataFromBase58Check = %@",[tt dataFromBase58],[tt dataFromBase58Check]);
+    
+    NSData * ttdata = [tt dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"base58String = %@\n dataFromBase58Check = %@",[ttdata base58String],[tt dataFromBase58Check]);
+```
+
+
 ### base58的查询字母表
 
 我的CBBase58 是从CoreBitcoin摘出来的，CoreBitcoin是比特币的pod库，他的base58 最后查询的字母表与比特币的保持一致，如果有更改的需要，可以从github上下载代码并修改。
