@@ -118,3 +118,27 @@ CB_RIPEMD是RIPEMD算法的OC基础pod库，目前只有RIPEMD-160。
 目前该 repo 只有 RIPEMD-160。
 
 计划是将 RIPEMD 下的相关算法都集成一下，包括（128、160、256和320），回头慢慢补充更新。
+
+# 关于 BCGenerator
+
+BCGenerator 我自己拼装的一个根据种子生成私钥，公钥，地址的pod库。
+CBBase58的pod库也是为了这个pod库封装的，但后来发现不必要了，就都直接使用 BCGenerator 了。
+其中，BCGenerator 中使用Base58 是在 generator.address 这一步中，具体情况，可以移步看一下相关代码。
+
+项目地址:https://github.com/caobo56/BCGenerator
+
+使用方法如下：
+
+```
+    BCGenerator * generator = [[BCGenerator alloc]initWithWith:@"pseudorandom sequence"];
+    // pseudorandom sequence 为你的随机数生成的结果
+
+    NSLog(@"generator.rootPrivatekey = %@",generator.rootPrivatekey);
+    NSLog(@"generator.mainProcessingKey = %@",generator.mainProcessingKey);
+    NSLog(@"generator.rootPublickey = %@",generator.rootPublickey);
+    NSLog(@"generator.address = %@",generator.address);
+
+    BTCScript* outputScript = [[BTCScript alloc] initWithAddress:[BTCAddress addressWithString:generator.address]];
+    NSLog(@"outputScript.data == %@",outputScript.data);
+```
+
