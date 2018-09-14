@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NS+BTCBase58.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self Base58TestCase];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)Base58TestCase{
+    NSString * tt = @"ttttt";
+    NSLog(@"dataFromBase58 = %@\n dataFromBase58Check = %@",[tt dataFromBase58],[tt dataFromBase58Check]);
+    
+    NSData * ttdata = [tt dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"base58String = %@\n dataFromBase58Check = %@",[ttdata base58String],[tt dataFromBase58Check]);
+
 }
 
 
